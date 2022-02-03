@@ -12,7 +12,6 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    /* overflow: hidden; */
 
 }
 
@@ -121,7 +120,6 @@ nav a{
 }
 .slide > div > h3{
     line-height: 10px;
-    /* padding: 10px; */
     margin: 30px;
 }
 .slide > div > p{
