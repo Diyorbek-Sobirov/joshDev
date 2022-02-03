@@ -65,6 +65,15 @@ nav a{
     width: 100%;
 }
 
+.toggler{
+    display: none;
+}
+
+.toggler > img{
+    width: 30px;
+    height: 30px;
+}
+
 .header-text {
     width: 50%;
     color: #fff;
@@ -161,17 +170,37 @@ footer{
     .nav-links ul li{
         display: block;
     }
+    .toggler{
+        display: flex;
+        margin-right: 40px;
+        /* margin-left: auto; */
+    }
     .nav-links{
         position: absolute;
-        background: rgb(70, 67, 67);
+        /* background: rgb(70, 67, 67);  */
         height: 50vh;
         width: 180px;
         top: 0;
         right: 0;
-        text-align: left;
+        text-align: right;
         z-index: 2;
 
     }
+    .toggler:hover + .navbar-menu{
+        transform: translate(13%);
+        cursor: pointer;
+    }
+    .navbar-menu{
+        transform: translate(-300%);
+        background-color: black;
+        right: 0;
+        /* left: 30px; */
+        top: 30px;
+        position: absolute;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+    } 
 
     .header-text {
         width: 114%;
@@ -189,21 +218,35 @@ footer{
       
     }
     .slide{
+        flex-direction: row;
         margin-top: 350px;
         display: flex;
         margin-left:80px;
     
     }
+    /* .events{
+        display: flex;
+        margin-left:50px ;
+         margin-top: 50px;
+    } */
     .slide > div > img{
         width: 80px;
         height: 80px;
+        display: flex;
+        flex-direction: column;
+      
     }
     .slide > div > p{
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+  
      }
-     .slide > div > h3{
+     /* .slide > div > h3{
       font-size: 15px;
-    }
+      display: flex;
+    
+    } */
 
     .footer-icon{
         display: block;
